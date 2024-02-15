@@ -20,7 +20,7 @@ public class CoupangRestController {
         this.service = service;
     }
 
-    @GetMapping()
+    @PostMapping()
     @ApiOperation(value = "get Coupang Authorization", notes = ".")
     public Object get(
             @Valid @RequestBody CoupangDto.Request request) throws URISyntaxException {
