@@ -1,6 +1,6 @@
 package com.ntuple.token.coupang.utils;
 
-import com.coupang.openapi.sdk.Hmac;
+import com.ntuple.common.library.Hmac;
 import org.apache.http.client.utils.URIBuilder;
 import org.springframework.stereotype.Component;
 
