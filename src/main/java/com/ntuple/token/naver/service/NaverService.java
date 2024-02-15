@@ -1,12 +1,9 @@
 package com.ntuple.token.naver.service;
 
-import com.ntuple.token.coupang.model.CoupangDto;
 import com.ntuple.token.coupang.model.NaverDto;
-import com.ntuple.token.coupang.utils.CoupangUtils;
 import com.ntuple.token.naver.utils.NaverUtils;
 import org.springframework.stereotype.Service;
 
-import java.net.URISyntaxException;
 
 @Service
 public class NaverService {

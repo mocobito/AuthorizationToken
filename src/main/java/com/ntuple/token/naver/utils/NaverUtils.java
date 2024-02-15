@@ -1,15 +1,9 @@
 package com.ntuple.token.naver.utils;
 
-import com.coupang.openapi.sdk.Hmac;
 import com.ntuple.common.library.BCrypt;
-import org.apache.http.client.utils.URIBuilder;
-import org.apache.tomcat.util.buf.StringUtils;
 import org.springframework.stereotype.Component;
 
-import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
-import java.sql.Timestamp;
-import java.time.Instant;
 import java.util.Base64;
 
 
