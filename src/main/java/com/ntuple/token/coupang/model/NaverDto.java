@@ -15,5 +15,6 @@ public class NaverDto {
     @Data
     public static class Response {
         private String authorization;
+        private Long timestamp;
     }
 }

@@ -21,8 +21,10 @@ public class NaverService {
 //        return ResponseEntity.ok(APIResponseBuilder.buildResponse(ResultMessages.API_SUCCESS, response));
 //    }
     public Object generateSignature(NaverDto.Request req) {
+        long timestamp = System.currentTimeMillis();
         NaverDto.Response response = new NaverDto.Response();
-        response.setAuthorization(utils.generateSignature(req.getClientId(), req.getClientSecret()));
+        response.setAuthorization(utils.generateSignature(req.getClientId(), req.getClientSecret(), timestamp));
+        response.setTimestamp(timestamp);
         return response;
     }
 }

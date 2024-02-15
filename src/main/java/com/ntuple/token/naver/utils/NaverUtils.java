@@ -14,8 +14,7 @@ public class NaverUtils {
      * @param clientId
      * @param clientSecret
      */
-    public  String generateSignature(String clientId, String clientSecret) {
-        long timestamp = System.currentTimeMillis();
+    public  String generateSignature(String clientId, String clientSecret, long timestamp) {
         String password = clientId + "_" + timestamp;
         // bcrypt 해싱
         String hashedPw = BCrypt.hashpw(password, clientSecret);
