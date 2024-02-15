@@ -8,12 +8,12 @@ import java.net.URISyntaxException;
 
 @Component
 public class CoupangUtils {
+
     /**
      * @param method
      * @param path
      * @param secretKey
      * @param accessKey
-     * @return
      */
     public String authorizationGenerate(String method, String path, String secretKey, String accessKey) throws URISyntaxException {
         return Hmac.generate(method, new URIBuilder()

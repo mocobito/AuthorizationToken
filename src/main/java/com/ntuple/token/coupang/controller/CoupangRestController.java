@@ -21,11 +21,11 @@ public class CoupangRestController {
     }
 
     @PostMapping()
-    @ApiOperation(value = "get Coupang Authorization", notes = ".")
-    public Object get(
+    @ApiOperation(value = "get Coupang Authorization", notes = "generate Signature")
+    public Object generateSignature(
             @Valid @RequestBody CoupangDto.Request request) throws URISyntaxException {
         Object response = service.getAuthorization(request);
-        logger.logApi(RequestMethod.GET, Constant.API_COUPANG, request, response);
+        logger.logApi(RequestMethod.POST, Constant.API_COUPANG, request, response);
         return response;
     }
 }
